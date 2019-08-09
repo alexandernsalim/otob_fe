@@ -1,0 +1,279 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
+  
+  #nav {
+    padding: 30px;
+  }
+  
+  .navbar a {
+    transition: 0.3s;
+    color: #068aca;
+  }
+  
+  .navbar a:hover{
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: #068aca;
+    font-weight: bold;
+    margin-top:0.2em;
+    border-radius: 0.3em;
+  }
+  
+  .navbar a.router-link-exact-active {
+    font-weight: bold;
+    color: #068aca;
+    border-radius: 0.5em;
+  }
+  
+  img{
+    height:30px; 
+    border-radius:50%;
+  }
+  
+  .navbar-brand{
+    color: #068aca;
+  }
+  
+  .navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+  }
+  
+  #footer div{
+    box-shadow: 0px 5px 5px #999, 0px -1px 5px #999;
+    background-color:#e5e5e5;
+    color:#078aca;
+    text-align: center; 
+    font-weight: bold;
+  }
+  #content{
+    background-color: #f5f5f5;
+    /* margin-top: 3em; */
+    padding-top: 5em;
+    padding-bottom: 5em;
+    min-height: 700px;
+  }
+  
+  #content thead th, #content .btn-primary{
+    color:white;
+    background-color: rgb(38, 164, 218);
+    border-color: rgb(32, 145, 193);
+  }
+
+  #content .btn-primary:hover {
+    background-color: rgb(32, 145, 193);
+  }
+   
+  #content button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }
+  
+  #content table, #content input{
+    font-size: 14px;
+  }
+  
+  #content table{
+    border: 1px solid #dee2e6;
+  }
+  
+  #loginFirst {
+    background-color: #d2d6de
+  }
+
+  .dropdown-user {
+    min-width: 12em;
+  }
+
+/* =============================== CSS FOR ALL COLOR ============================= */
+#content .color-orange {
+  color: #f99401;
+}
+
+/* =============================== CSS FOR ALL BUTTON ============================= */
+#content .btn-blue {
+  background-color: #17a1e0;
+  border-color: #0b8ecc;
+  color: white;
+}
+#content .btn-blue:hover{
+  background-color: #0b8ecc;
+}
+
+#content .btn-green, .btn-green {
+  background-color: #00b35e;
+  border-color: #078a49;
+  color: white;
+}
+#content .btn-green:hover, .btn-green:hover{
+  background-color: #078a49;
+}
+
+#content .btn-orange {
+  background-color: #f99401;
+  border-color: #e88a00;
+  color: white;
+}
+#content .btn-orange:hover{
+  background-color: #e88a00;
+}
+
+#content .btn-gray{
+  background-color: #a7a7a7;
+  border-color: #929292;
+  color: white;
+}
+#content .btn-gray:hover{
+  background-color: #929292;
+}
+
+#content .btn-red{
+  background-color: #e20606;
+  border-color: #bf0202;
+  color: white;
+}
+#content .btn-red:hover{
+  background-color: #bf0202;
+}
+
+#content .input-gray {
+  background-color: #e4e4e4;
+  border-color: #c2c2c2;
+}
+/* =============================== CSS FOR BLOCK CONTAINER ======================== */
+  .block{
+    font-family: 'Glegoo', Helvetica, Arial, serif !important;
+    background-color:white; 
+    padding: 1em; 
+    border-radius:0.5em;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    transition: transform 0.3s;
+    border: 1px solid #dee2e6;
+  }
+ 
+  .block:hover {
+    box-shadow: 0 1px 10px #999;
+  }
+   /* ======================== END OF CSS FOR BLOCK CONTAINER ======================== */
+
+   /* =============================== CSS FOR SCROLL TABLE =========================== */
+  .table-scroll {
+    table-layout: fixed;
+  }
+
+  thead {
+    background-color: rgb(38, 164, 218);
+    color: white;
+    font-weight: bold;
+  }
+
+  tbody{
+    display: block;
+    height: 350px;
+    overflow: auto;
+    background-color:white;
+  }
+
+  tbody.scrollContentCart{
+    display: block;
+    min-height: 0px;
+    max-height: 130px;
+    overflow: auto;
+  }
+
+  tbody tr td{
+   word-break: break-all;
+  }
+  
+  .table-scroll tr{
+    width: 100%;
+    display:flex;
+  }
+
+  .table-scroll td,.table-scroll th{
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+    padding: 1rem;
+    text-align:left;
+  }
+
+  .table-scroll.small-first-col td:first-child,
+  .table-scroll.small-first-col th:first-child{
+    flex-basis:20%;
+    flex-grow:1;
+  }
+
+  .empty-cart {
+      height: 200px;
+  }
+  .empty-cart h5{
+      margin-top: 3em;
+  }
+   /* ======================== END OF CSS FOR SCROLL TABLE =========================== */
+
+   /* ================================ CSS FOR TABLE ================================= */
+   .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+  
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .modal-container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+  
+  .modal-body {
+    margin: 20px 0;
+  }
+  
+  .modal-default-button {
+    float: right;
+  }
+  
+  .modal-enter {
+    opacity: 0;
+  }
+  
+  .modal-leave-active {
+    opacity: 0;
+  }
+  
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+   /* =============================== END OF CSS FOR TABLE ============================== */
+
+  
